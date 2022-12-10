@@ -1,9 +1,5 @@
 # Milana Hontarava 
 ___
-### Profile
-My name is Milana. I'm 22. I'm a teacher. I really like to sew and read classical literature. But recently, I discovered something completely new. This is JS.
-Of course, I have no experience in this business, but I am very purposeful, diligent and super responsible.
-___
 ### Contacts
 * __Phone:__ +375445322719 
 * __E-mail:__ gontarewam@gmail.com
@@ -11,8 +7,10 @@ ___
 * __Discord:__ @milanago
 * __Adress:__ Rogachevskaya, 13, Gomel, 246022
 ___
-
-
+### Profile
+My name is Milana. I'm 22. I'm a teacher. I really like to sew and read classical literature. But recently, I discovered something completely new. This is JS.
+Of course, I have no experience in this business, but I am very purposeful, diligent and super responsible.
+___
 ### Skills
 * HTML
 * CSS

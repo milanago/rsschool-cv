@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <main class="main">
+        <div class="left"> 
+            <div class="profile">
+            <img src="avatar.jpg" alt="avatar"  class="circle"> 
+           <h1>Milana Hontarava</h1>
+        </div>
+
+        <div class="contacts" id="contacts">
+        <h3>Contacts</h3>
+        <ul class="list">
+        <li><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i> +375445322719</span> </li>
+        <li><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>gontarewam@gmail.com</span></li>
+        <li><span class="icon"><i class="fa fa-telegram" aria-hidden="true"></i> @milanagontarewa</span></li>
+        <li><span class="icon"><img src="discord.png" width="20px" alt="discord"> @milanago</span></li>
+        <li><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> Rogachevskaya, 13, Gomel, 246022</span></li>
+        </ul>
+       </div>
+       <div class="education" id="education">
+        <h3>Education</h3>
+        <h4 class="icon">2017-2021</h4>
+        <p class="icon">Teacher (German, English)<br>
+            <i>Francisk Skorina Gomel State University</i></p>
+       </div>
+       <div class="lan" id="languages">
+        <h3>Languages</h3>
+        <ul class="listt">
+            <li>Belarusian - Native</li>
+            <li>Russian - Native</li>
+            <li>German - B1</li>
+            <li>English - Intermidiate</li>
+        </ul>
+       </div>
+            </div>
+        
+        <div class="right">
+
+            <header class="header">
+                <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li> 
+                    <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li> 
+                  </ul></nav>
+               </header>
+
+
+
+
+
+
+
+
+          <h2 class="title" id="summary">Summary</h2>
+          <p class="metext">My name is Milana. I'm 22. I'm a teacher. 
+            I really like to sew and read classical literature. But recently, I discovered something completely new. This is JS.
+            Of course, I have no experience in this business, but I am very purposeful, diligent and super responsible.</p>
+               
+            <h2 class="title" id="skills">Skills</h2>
+            <ul class="list">
+                <li><span class="icon"><i class="fa fa-html5" aria-hidden="true"></i> HTML</span> </li>
+                <li><span class="icon"><i class="fa fa-css3" aria-hidden="true"></i> CSS</span></li>
+                <li><span class="icon"><img src="js.png" alt="js" width="20px">JS (Basics)</span></li>
+            </ul>
+            <h2 class="title" id="code">Code example</h2>
+            <pre class="code"><code>var words = ['monkey', 'house', 'vegetable']
+                var word = words[Math.floor(Math.random() * words.length)]
+                var answerArray = []
+                for (var i = 0; i < word.length; i++) {
+                    answerArray[i] = '-'
+                 } 
+                       var remain = word.length
+                     let att = 10
+                      while (remain > 0 && att--  > 0)    {
+                    alert(answerArray.join(''))
+                    var guess = prompt('Guess the letter or exit').toLowerCase() 
+                          if (guess === null) 
+                          { break
+                    }     else if (att === 0) {
+                        alert('limit')
+                    }    else if (guess.length !== 1) {
+                        alert('Please, write only one letter') 
+                    }      else   {
+                        for (let j = 0; j < word.length; j++)      {         
+                          if   (answerArray[j] === guess) {
+                    alert('you have used this letter') }     
+                      if   (word[j] === guess ) {
+                                answerArray[j] = guess 
+                                   remain-- }}   
+                                         }}
+                            alert(answerArray.join(' '))
+                       alert('you have guessed ' + word) </code></pre>
+                        <footer class="footer">
+                    <p>&#169 2022 <a href="https://github.com/milanago" class="linkgit">milanago</a></p>
+                   <a href="https://rs.school/js/"><img src="rs_school_js.ico" alt="ico" width="100" class="ico"></a> 
+</footer>      
+              
+           </div>
+   
+
+    </main>
+    
+  
+
+</body>
+</html>

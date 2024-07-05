@@ -1,7 +1,7 @@
-# Milana Hontarava 
+# Milana Hontarava
 ___
 ### Contacts
-* __Phone:__ +375445322719 
+* __Phone:__ +375445322719
 * __E-mail:__ gontarewam@gmail.com
 * __Telegram:__ @milanagontarewa
 * __Discord:__ @milanago
@@ -23,27 +23,27 @@ var words = ['monkey', 'house', 'vegetable']
 var word = words[Math.floor(Math.random() * words.length)]
 var answerArray = []
 for (var i = 0; i < word.length; i++) {
-    answerArray[i] = '-' } 
+    answerArray[i] = '-' }
        var remain = word.length
      let att = 10
       while (remain > 0 && att--  > 0)    {
     alert(answerArray.join(''))
-    var guess = prompt('Guess the letter or exit').toLowerCase() 
+    var guess = prompt('Guess the letter or exit').toLowerCase()
           if (guess === null) { break
     }     else if (att === 0) {
         alert('limit')
     }    else if (guess.length !== 1) {
-        alert('Please, write only one letter') 
+        alert('Please, write only one letter')
     }      else   {
-        for (let j = 0; j < word.length; j++)      {         
+        for (let j = 0; j < word.length; j++)      {
           if   (answerArray[j] === guess) {
-    alert('you have used this letter') }     
+    alert('you have used this letter') }
       if   (word[j] === guess ) {
-                answerArray[j] = guess 
-                   remain-- }}   
+                answerArray[j] = guess
+                   remain-- }}
                          }}
             alert(answerArray.join(' '))
-       alert('you have guessed ' + word) 
+       alert('you have guessed ' + word)
 
 ```
 ___

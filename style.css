@@ -9,7 +9,8 @@
 html {
     scroll-behavior: smooth;
     max-width: 1440px;
-    }
+    min-width: 620px;
+       }
 body {
     display: flex;
     flex-direction: column;

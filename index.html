@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/icons8-profile-50.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>cv</title>
+</head>
+<body>
+<header class="header">
+       <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+            <li class="nav-item"> <a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"> <a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item"> <a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"> <a href="#contacts" class="nav-link">Contacts</a></li>
+             </ul>
+<div class="burger">
+        <span  class="line"></span>
+        <span  class="line"></span>
+        <span  class="line"></span>
+       </div>
+       </nav>
+    </header>
+    <script src="script.js"></script>
+<main class="main">
+           <div id="image"><img src="assets/img/photo1719999552.jpeg" alt="my photo" class="photo"></div>
+           <section class="section" id="name">
+            <h1 class="section-title">MILANA HONTARAVA</h1>
+            <p>FUTURE FRONT-END DEVELOPER</p>
+       </section>
+          <section class="section" id="contacts">
+                <h3 class="section-title">Contacts</h3>
+                <ul class="list">
+                    <li><span class="icon"><i class="fa fa-phone" aria-hidden="true"></i> +375445322719</span> </li>
+                    <li><span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>gontarewam@gmail.com</span></li>
+                    <li><span class="icon"><i class="fa fa-telegram" aria-hidden="true"></i> @milanagontarewa</span></li>
+                    <li><span class="icon"><img src="/rsschool-cv/assets/img/discord.png" alt="discord" class="discord_img"> @milanago</span></li>
+                    <li><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> Rogachevskaya, 13, Gomel, 246022</span></li>
+                    </ul>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li class="html_icon">HTML</li>
+                    <li class="css_icon">CSS</li>
+                    <li class="js_icon">JS (Basics)</li>
+                </ul>
+            </section>
+            <section class="section" id="about">
+                <h3>About me</h3>
+                <p>I'm 24 years old. I work as a teacher. I really like creativity and 3d modeling. But recently I discovered something completely new. This is JS.Of course, I have no experience in this business, but I am very purposeful, diligent and super responsible.
+                </p>
+                  <h3>Languages</h3>
+                    <ul>
+                    <li>Belarusian - Native</li>
+                    <li>Russian - Native</li>
+                    <li>English - Intermidiate</li>
+                </ul>
+                </section>
+<section class="section" id="code">
+<h2 class="section-title">Code</h2>
+<pre class="code"><code>var words = ['monkey', 'house', 'vegetable']
+    var word = words[Math.floor(Math.random() * words.length)]
+    var answerArray = []
+    for (var i = 0; i &lt; word.length; i++) {
+        answerArray[i] = '-'
+     }
+           var remain = word.length
+         let att = 10
+          while (remain > 0 && att--  > 0)    {
+        alert(answerArray.join(''))
+        var guess = prompt('Guess the lettear or exit').toLowerCase()
+              if (guess === null)
+              { break
+        }     else if (att === 0) {
+            alert('limit')
+        }    else if (guess.length !== 1) {
+            alert('Please, write only one letter')
+        }      else   {
+            for (let j = 0; j &lt; word.length; j++)      {
+              if   (answerArray[j] === guess) {
+        alert('you have used this letter') }
+          if   (word[j] === guess ) {
+                    answerArray[j] = guess
+                       remain-- }}
+                             }}
+                alert(answerArray.join(' '))
+           alert('you have guessed ' + word) </code></pre>
+<section class="section" id="education">
+    <h2 class="section-title">Education</h2>
+    <p>Francisk Skorina Gomel State University</p>
+</section>
+                   </section>
+    </main>
+           <footer class="footer">
+            <p class="year">&copy; 2024 <a href="https://github.com/milanago" class="linkgit">milanago</a></p>
+           <a href="https://rs.school/courses/javascript-preschool-ru"><img src="/rsschool-cv/assets/img/output-onlinepngtools.png" alt="ico" width="100" class="ico"></a>
+</footer>
+</body>
+</html>
